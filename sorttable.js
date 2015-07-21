@@ -208,8 +208,8 @@ sorttable = {
     hasInputs = (typeof node.getElementsByTagName == 'function') &&
                  node.getElementsByTagName('input').length;
 
-    if (node.getAttribute("data-sort-key") != null) {
-      return node.getAttribute("data-sort-key");
+    if (node.getAttribute("data-sorttable-key") != null) {
+      return node.getAttribute("data-sorttable-key");
     }
     else if (typeof node.textContent != 'undefined' && !hasInputs) {
       return node.textContent.replace(/^\s+|\s+$/g, '');
